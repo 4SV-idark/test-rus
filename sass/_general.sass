@@ -1,0 +1,367 @@
+.navbar
+    width: 100%
+    height: 80px
+    position: fixed
+    padding: 32px 0
+    background: linear-gradient(132deg, #9e0b37 0%, #ffc531 71.98%, #9e0b37 100%)
+    z-index: 20
+    display: block
+    &__conteiner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        align-content: center
+    &__menu
+        margin: 0
+        padding: 0
+        display: flex
+        position: relative
+    &__item
+        padding: 0 0 0 72px
+        &:nth-last-child(3)
+            padding-left: 0
+        &:hover > .navbar__list
+            display: initial
+    &__link
+        display: flex
+        position: relative
+        font-family: var(--font-family)
+        font-weight: 500
+        font-size: 16px
+        color: #fff
+        fill: #fff
+        &:hover
+            fill: #000
+            color: #000
+            transition: all 0.1s ease-in-out
+        &__arrow
+            position: absolute
+            top: 1px
+            left: 112%
+    &__list
+        display: none
+        position: absolute
+        left: 0
+        padding: 29px 0 0 0
+        &__item
+            width: 130px
+            background: #bb4336
+        &__link
+            display: block
+            width: 100%
+            border: 1px solid rgba(0, 0, 0, .1)
+            padding: 15px 0
+            font-family: var(--font-family)
+            font-weight: 500
+            font-size: 16px
+            color: #fff
+            &:hover
+                color: #000
+                transition: all 0.1s ease-in-out
+            &:nth-last-child(3)
+                padding-top: 15px
+    &__login
+        padding: 0 42px 0 0
+        cursor: pointer
+        font-family: var(--font-family)
+        font-weight: 500
+        font-size: 16px
+        color: #fff
+        fill: #fff
+        &:hover
+            color: #000
+            transition: all 0.1s ease-in-out
+    &__registration
+        cursor: pointer
+        position: relative
+        padding: 16px 24px
+        background-color: rgba(158, 11, 55, 0.70)
+        box-shadow: inset 5px 5px 5px 0px  rgba(255, 255, 255, 0.7)
+        border-radius: 40px
+        font-family: var(--font-family)
+        color: #fff
+        font-weight: 400
+        font-style: normal     
+        transition: background-color 0.3s ease-out
+        &:hover
+            background-color: rgba(158, 11, 55, 0.87)
+            
+.main
+    min-height: 640px
+    background: url('../img/bg/bg.png') center (center / cover) no-repeat
+    &__title
+        padding: 21% 300px 250px 0
+        font-family: var(--font-family)
+        font-weight: 500
+        font-size: 50px
+        line-height: 120%
+        text-transform: uppercase
+        color: #fff
+
+.info
+    padding: 80px 0
+    &__content
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: space-between
+        &__block-left
+            width: 1030px
+        &__title-1
+            padding: 40px 60px 50px 30px
+            border-radius: 30px
+            background: linear-gradient(135deg, #ffa462 0%, #b45350 21.79%, #8a2645 48.93%, #291725 84.55%)
+            font-family: var(--font-family)
+            font-weight: 400
+            font-size: 22px
+            line-height: 140%
+            color: #fff
+        &__block-1
+            padding: 60px 0
+            display: flex
+            align-content: flex-start
+        &__nubmer
+            padding: 0 40px 0 0
+            font-family: var(--font-family)
+            font-weight: 700
+            font-size: 183px
+            line-height: 110%
+            text-transform: uppercase
+            background: linear-gradient(136deg, #8a2645 0%, #291725 67.05%, #171422 98.91%)
+            background-clip: text
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+        &__title-2
+            padding: 30px 0 0 0
+            font-family: var(--font-family)
+            font-weight: 400
+            font-size: 22px
+            line-height: 140%
+            color: #fff
+        &__up
+            display: flex
+            align-content: center
+            align-items: center
+            &__products-1
+                margin: 41px 41px 0 0
+                padding: 11px 73px
+                border-radius: 12px
+                box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25)
+                background: #fff
+            &__products-2
+                margin: 41px 41px 0 0
+                padding: 4px 107px
+                border-radius: 12px
+                box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25)
+                background: #fff
+            &__products-3
+                margin: 41px 0 0 0
+                padding: 12px 54px
+                border-radius: 12px
+                box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25)
+                background: #fff
+        &__down
+            display: flex
+            align-content: center
+            align-items: center
+            &__products-4
+                margin: 20px 41px 0 0
+                padding: 11px 67px
+                border-radius: 12px
+                box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25)
+                background: #fff
+            &__products-5
+                margin: 20px 41px 0 0
+                padding: 12px 67px
+                border-radius: 12px
+                box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25)
+                background: #fff
+            &__products-6
+                margin: 20px 0 0 0
+                padding: 12px 61px
+                border-radius: 12px
+                box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25)
+                background: #fff
+        &__subtitle
+            padding: 20px 70px 0 0
+            font-family: var(--font-family)
+            font-weight: 400
+            font-size: 18px
+            line-height: 140%
+            text-align: right
+            color: #fff
+        &__title-3
+            font-family: var(--font-family)
+            font-weight: 400
+            font-size: 22px
+            line-height: 140%
+            color: #fff
+        &__block-2
+            display: flex
+            align-content: center
+            align-items: center
+        &__nubmer-new
+            padding: 0 5px 0 0
+            font-family: var(--font-family)
+            font-weight: 700
+            font-size: 183px
+            line-height: 110%
+            text-transform: uppercase
+            background: linear-gradient(136deg, #8a2645 0%, #291725 67.05%, #171422 98.91%)
+            background-clip: text
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+        &__title-4
+            font-family: var(--font-family)
+            font-weight: 400
+            font-size: 22px
+            line-height: 140%
+            color: #fff
+        &__block-3
+            display: flex
+        &__title-5
+            padding: 33px 0 0 0
+            font-family: var(--font-family)
+            font-weight: 400
+            font-size: 22px
+            line-height: 140%
+            color: #fff
+        &__img-error
+            padding: 0 0 43px 0
+            display: flex
+            align-content: center
+            justify-content: center
+            &__img-1
+                padding: 17px 90px 0 0
+            &__img-2
+                padding: 33px 0 0 0
+        &__title-6
+            font-family: var(--font-family)
+            font-weight: 400
+            font-size: 22px
+            line-height: 140%
+            color: #fff
+        &__block-4
+            display: flex
+            position: relative
+        &__result-img
+            &__pdf
+                position: absolute
+                right: 310px
+                top: -10px
+            &__arrow-left
+                position: absolute
+                left: 450px
+                top: 13%
+            &__arrow-right
+                position: absolute
+                right: 200px
+                top: 13%
+            &__illustrator
+                position: absolute
+                left: 310px
+                top: 12%
+            &__coreldraw
+                position: absolute
+                right: 45px
+                top: 12%
+        &__result-book
+            display: flex
+            padding: 182px 0 62px 0
+            &__img-1
+                padding: 0 0 0 10px
+                &:nth-last-child(4)
+                    padding-left: 0
+            &__img-2
+                padding: 0 0 0 25px
+        &__title-7
+            padding: 30px 0 0 0
+            font-family: var(--font-family)
+            font-weight: 400
+            font-size: 22px
+            line-height: 140%
+            color: #fff
+        &__title-8
+            padding: 30px 0 0 0
+            font-family: var(--font-family)
+            font-weight: 400
+            font-size: 22px
+            line-height: 140%
+            color: #fff
+        &__block-right
+            margin: 0 auto
+            position: relative
+            &__item-1
+                margin: 0 0 10px 0
+                background: url('../img/block-left/block-1.png') center (center / cover) no-repeat
+                width: 220px
+                height: 220px
+            &__item-2
+                margin: 0 0 10px 0
+                background: url('../img/block-left/block-2.png') center (center / cover) no-repeat
+                width: 220px
+                height: 220px
+            &__item-3
+                margin: 0 0 10px 0
+                background: url('../img/block-left/block-3.png') center (center / cover) no-repeat
+                width: 220px
+                height: 220px
+            &__text
+                position: relative
+                padding: 170px 7px 15px 7px
+            &__subtitle
+                position: relative
+                z-index: 1
+                padding: 0.5px 30px 0px 5px
+                text-align: center
+                border: 2px solid #fff
+                border-radius: 25px
+                font-family: var(--font-family)
+                font-weight: 700
+                font-size: 9px
+                line-height: 140%
+                text-transform: uppercase
+                text-align: center
+                color: #fff
+                i
+                    font-family: var(--font-family)
+                    font-weight: 700
+                    font-size: 13px
+                    line-height: 140%
+                    text-align: center
+                    color: #fff
+            &__arrow
+                position: absolute
+                z-index: 1
+                bottom: 15px
+                right: 5px
+                width: 35px
+                height: 35px
+                border-radius: 100%
+                background: linear-gradient(132deg, #df5017 0%, #f9cb74 100%)
+                fill: linear-gradient(132deg, #df5017 0%, #f9cb74 100%)
+                box-shadow: inset 2px 2px 3px 0 rgba(255, 255, 255, 0.5), 2px 2px 10px 0 #df5017
+                transition: transform 0.3s ease-out
+                &:hover
+                    transform: scale(1.08)
+            &__arrow-1
+                position: absolute
+                z-index: 1
+                top: 6px
+                left: 10px
+            &__shadow
+                position: absolute
+                bottom: 0
+                left: 0
+                background: linear-gradient(180deg, rgba(23, 20, 34, 0) 0%, rgba(23, 20, 34, 0.9) 100%)
+                width: 220px
+                height: 110px
+.carousel
+    padding: 0 00 150px 0
+    &__right
+        padding: 0 0 20px 0
+        &__img
+            padding: 0 20px 0 0
+    &__left
+        &__img
+            padding: 0 20px 0 0
